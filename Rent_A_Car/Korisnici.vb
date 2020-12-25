@@ -116,7 +116,7 @@ Public Class Korisnici
             Dim conn As OleDb.OleDbConnection = CreateConnection()
             conn.Open()
             Dim strSql As String = "INSERT INTO Korisnici ( Ime, Prezime, Adresa, KontaktBroj, JMBG )
-                                    VALUES('" + TextBoxIme.Text + "','" + TextBoxPrezime.Text + "','" + TextBoxAdresa.Text + "','" + TextBoxKontaktBroj.Text + "','" + TextBoxKontaktBroj.Text + "')"
+                                    VALUES('" + TextBoxIme.Text + "','" + TextBoxPrezime.Text + "','" + TextBoxAdresa.Text + "','" + TextBoxKontaktBroj.Text + "','" + TextBoxJMBG.Text + "')"
             Dim dadapter As OleDbDataAdapter
             dadapter = New OleDbDataAdapter()
             'dadapter.SelectCommand = New OleDbCommand(strSql, conn)
